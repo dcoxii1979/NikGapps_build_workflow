@@ -3,7 +3,7 @@ name: Build NikGapps Custom Package
 on:
   workflow_dispatch:
     inputs:
-      ANDROID_VERSION:
+      ANDROID_VERSION: 13
         description: " Enter the Target Android Version (eg: 10, 11, 12.1, 13 etc.)"
         required: true
 
@@ -21,7 +21,7 @@ jobs:
 
        - name: Cloning the Build Repo
          run: |
-              git clone --depth=1 https://github.com/ri5h46h/build.git
+              git clone --depth=1 https://github.com/nikgapps/build.git
 
        - name: Cloning the Config Repo
          run: |
